@@ -1,0 +1,207 @@
+.categories {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 200px 1fr;
+    padding: 25px 15px;
+    background-image: url(../images/background.png);
+}
+
+.categories .list {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 7px #ddd;
+    border: 1px solid #eee;
+}
+
+.list .allcategories h6,
+.list .trending-search h6 {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: inherit;
+    line-height: 1.2;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.list .allcategories h6::after,
+.list .trending-search h6::after {
+    content: "";
+    width: 35px;
+    height: 2px;
+    position: absolute;
+    background-color: rgb(33, 37, 41);
+    bottom: -3px;
+    left: 0;
+}
+
+.list .allcategories a,
+.list .trending-search a {
+    list-style: none;
+    color: #3a3a3a;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 15px;
+    transition: .1s color;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    padding-left: 10px;
+    position: relative;
+}
+
+.list .allcategories a::after,
+.list .trending-search a::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 0px;
+    height: 0%;
+    background-color: rgb(33, 37, 41);
+}
+
+.list .allcategories a:hover,
+.list .trending-search a:hover {
+    color: goldenrod;
+}
+
+/* background-color: #fff; */
+/* .categories .details, */
+.categories .details .offer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 900px 240px;
+}
+
+.offer .img img {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.add {
+    visibility: hidden;
+    opacity: 0;
+    transition: 3s visibility, .3s opacity, 1s transform;
+    transform: translateY(0px);
+    padding: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+.offer .limitedoffer:hover .add,
+.recommended-items .card:hover .add {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-80px);
+}
+
+.limitedoffer .limited {
+    background-color: rgb(33, 37, 41);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add ion-icon {
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    color: rgb(33, 37, 41);
+    border: 2px solid rgb(33, 37, 41);
+}
+
+.offer .limitedoffer img {
+    width: 100%;
+}
+
+.categories .details .categories-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories-cards .img-card {
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url(../images/manfashion.jpg);
+    height: 240px;
+    background-position: center;
+    background-size: cover;
+    border: 1.5px solid #ffffff;
+    box-shadow: 2px 3px 10px #a8a8a8;
+    position: relative;
+    width: 235px;
+    cursor: pointer;
+    /* width: calc(100% / 5);
+    height: 100%;
+    margin: calc(10% / 5);
+    position: relative;
+    overflow: hidden;
+    background-color: aqua; */
+}
+
+.img-card.c1 {
+    background-image: url(../images/womanfashion.png);
+}
+
+.img-card.c3 {
+    background-image: url(../images/laptops.jpg);
+}
+
+.img-card.c4 {
+    background-image: url(../images/mobilesmart.webp);
+}
+
+.img-card.c5 {
+    background-image: url(../images/food.jpg);
+}
+
+.imgg {
+    height: 400px !important;
+}
+
+/* .categories .details .categories-cards .img-card img {
+    width: 100%;
+    border: 5px solid rgb(33, 37, 41);
+    border-radius: 50%;
+} */
+.categories-cards .img-card p {
+    color: white;
+    background-color: rgb(33, 37, 41);
+    width: 220px;
+    height: 35px;
+    position: absolute;
+    bottom: 1%;
+    right: 10px;
+    display: grid;
+    place-content: center;
+}
+
+.categories-cards .img-card:hover p {
+    color: goldenrod;
+}
+
+.text-warning {
+    color: goldenrod;
+}
+
+.text-decoration {
+    text-decoration: line-through;
+    /* text-decoration-line-through text-light-white */
+}
+
+.btn-dark {
+    color: white;
+    background-color: rgb(33, 37, 41);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-transform: capitalize;
+}

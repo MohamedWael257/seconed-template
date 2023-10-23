@@ -1,0 +1,240 @@
+.special-categories {
+    background-image: url(../images/background.png);
+    padding: 1rem 5rem;
+}
+
+.special-categories>h2 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.line {
+    width: 100px;
+    height: 3px;
+    background-color: goldenrod;
+    margin: 10px auto;
+    transition: .3s width;
+}
+
+.special-categories:hover .line {
+    width: 180px;
+}
+
+.most-cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.most-cards .card {
+    width: 280px;
+    /* height: 350px; */
+    padding: 10px;
+    position: relative;
+}
+
+.most-cards .card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.most-cards .card .card-title {
+    text-transform: capitalize;
+    margin-left: 10px;
+    font-size: 1.3rem;
+}
+
+.most-cards .card .card-des {
+    display: inline;
+    font-size: .8rem;
+    margin-left: 10px;
+    font-size: 1.3rem;
+    color: rgb(62, 62, 62);
+
+}
+
+.most-cards .card i {
+    position: absolute;
+    bottom: 12px;
+    right: 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    background-color: rgb(182, 90, 90);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s visibility, .4s opacity;
+}
+
+.most-cards .card:hover i {
+    opacity: 1;
+    visibility: visible;
+}
+
+.discount {
+    margin: 50px;
+    display: flex;
+    /* background-color: aqua; */
+}
+
+.discount-desc {
+    flex: 2;
+    background: #d9d9d8;
+    padding: 20px;
+    position: relative;
+}
+
+.discount-item {
+    flex: 1;
+    height: 300px;
+    position: relative;
+}
+
+.discount-item-info {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+.discount-item-info h3 {
+    font-weight: normal;
+    color: #7b5244;
+}
+
+.discount-item-info h2 {
+    font-size: 20px;
+    transform: translateY(0px);
+}
+
+.discount-item:nth-child(2) {
+    background-image: url(../images/3.jpg);
+    background-size: cover;
+    margin: 0 20px;
+    transition: transform 0.5s;
+}
+
+.discount-item:nth-child(2):hover,
+.discount-item:nth-child(3):hover {
+    transform: scale(1.1);
+}
+
+.discount-desc .top {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+
+.discount-desc .top .icon {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 50px;
+    color: #7b5244;
+}
+
+.discount-desc .top+p {
+    line-height: 1.7;
+}
+
+.discount-desc .bullets span {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background: #7b5244;
+    margin-left: 10px;
+}
+
+.discount-desc .bullets {
+    text-align: right;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+.discount-item:nth-child(3) {
+    background-image: url(../images/1.jpg);
+    background-size: cover;
+    transition: transform .5s;
+}
+
+.delivers {
+    display: flex;
+    margin: 50px;
+}
+
+.deliver-item {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #7b5244;
+}
+
+.deliver-item:last-child {
+    border: 0;
+}
+
+.deliver-info h3 {
+    font-size: 17px;
+}
+
+.deliver-info span {
+    color: gray;
+    font-size: 1rem;
+}
+
+.deliver-icon {
+    background-image: url(../images/service-icon.png);
+    height: 55px;
+    background-repeat: no-repeat;
+}
+
+.deliver-icon-1 {
+    background-position: center 5px;
+    transition: all .5s;
+}
+
+.deliver-item:hover .deliver-icon-1 {
+    background-position: center -86px;
+}
+
+.deliver-icon-2 {
+    background-position: center -180px;
+    transition: all .5s;
+}
+
+.deliver-item:hover .deliver-icon-2 {
+    background-position: center -273px;
+}
+
+.deliver-icon-3 {
+    background-position: center -366px;
+    transition: all .5s;
+}
+
+.deliver-item:hover .deliver-icon-3 {
+    background-position: center -455px;
+}
+
+.deliver-icon-4 {
+    background-position: center -549px;
+    transition: all .5s;
+}
+
+.deliver-item:hover .deliver-icon-4 {
+    background-position: center -639px;
+}
+
+.deliver-icon-5 {
+    background-position: center -734px;
+    transition: all .5s;
+}
+
+.deliver-item:hover .deliver-icon-5 {
+    background-position: center -826px;
+}
+
+hr {
+    margin: 50px;
+}

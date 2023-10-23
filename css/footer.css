@@ -1,0 +1,12 @@
+footer {
+    background-color: #e5e5e5;
+    padding: 20px 10px 10px 10px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+footer div {
+    text-align: center;
+    color: #000;
+    font-size: 1.3rem;
+}

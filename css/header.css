@@ -1,0 +1,188 @@
+header {
+    background-color: rgb(33, 37, 41);
+    color: white;
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 10% 60% 25%;
+    gap: 1.5%;
+}
+
+.logo {
+    /* background-color: thistle; */
+    font-size: 3rem;
+    font-weight: 400;
+    display: grid;
+    place-content: center;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.logo::after {
+    content: "eg";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+}
+
+nav {
+    /* transform: translateY(10px); */
+}
+
+nav ul {
+    padding: 10px;
+    /* background-color: teal; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li a {
+    padding: 10px 19px;
+    font-size: 1.2rem;
+    color: white;
+    text-transform: capitalize;
+    position: relative;
+}
+
+nav ul li a::after,
+nav ul li a::before {
+    border-radius: 15px;
+    content: "";
+    position: absolute;
+    border-style: solid;
+    top: 0;
+    left: 0;
+    transition: transform .5s;
+}
+
+nav ul li a::before {
+    border-width: 0 2px;
+    height: 100%;
+    width: 95%;
+    transform: scale3d(1, 0, 1);
+}
+
+nav ul li a:hover::before {
+    transform: scale3d(1, 1, 1);
+}
+
+nav ul li a::after {
+    border-width: 2px 0;
+    height: 96%;
+    width: 98%;
+    transform: scale3d(0, 1, 1);
+}
+
+nav ul li a:hover::after {
+    transform: scale3d(1, 1, 1);
+}
+
+nav ul li a:hover {
+    color: goldenrod;
+}
+
+.account {
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.account .cart {
+    position: relative;
+}
+
+.account .cart::after {
+    content: "0";
+    position: absolute;
+    bottom: 10px;
+    left: 12px;
+    color: white;
+    background-color: teal;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 8px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    margin-left: 10px;
+}
+
+.home {
+    padding: 5px 10px;
+    background-color: rgb(54, 59, 65);
+}
+
+.home>a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: .5s color;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+}
+
+.home>a:hover {
+    color: goldenrod;
+}
+
+.home a {
+    margin-right: 10px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    width: 550px;
+    border: 2px solid goldenrod;
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 5px;
+    transform: scale(0);
+    transition: transform 0.5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown:hover .dropdown-menu {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown-menu ul {
+    display: table-cell;
+    text-align: left;
+}
+
+.dropdown-menu ul li:first-child a {
+    display: block;
+    border-bottom: 1px dotted goldenrod;
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.dropdown-menu ul li {
+    line-height: 2.7;
+}
+
+.dropdown-menu ul li a {
+    color: #000;
+    font-size: 1rem;
+}
